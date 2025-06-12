@@ -1,0 +1,115 @@
+/* Import Outfit font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Home.module.css */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Outfit', sans-serif;
+}
+
+.mainContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+@media (min-width: 640px) {
+  .mainContent {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContent {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.header p {
+  color: #4b5563;
+  margin: 0;
+}
+
+.tabNavigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.tabContainer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.tabButton {
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: none;
+}
+
+.tabButtonActiveTracker {
+  background-color: #2563eb;
+  color: white;
+}
+
+.tabButtonActiveAnalysis {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.tabButtonInactive {
+  color: #4b5563;
+}
+
+.tabButtonInactive:hover {
+  color: #111827;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.analysisContainer {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 64px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer p + p {
+  margin-top: 4px;
+}

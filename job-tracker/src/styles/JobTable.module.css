@@ -1,0 +1,238 @@
+/* JobTable.module.css */
+
+.tableContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+  
+  .loadingContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+  }
+  
+  .loadingPulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .loadingTitle {
+    height: 16px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    width: 25%;
+    margin-bottom: 16px;
+  }
+  
+  .loadingRows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .loadingRow {
+    height: 48px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+  }
+  
+  .emptyContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .emptyContent {
+    color: #6b7280;
+  }
+  
+  .emptyIcon {
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+    color: #9ca3af;
+    margin-bottom: 16px;
+  }
+  
+  .emptyTitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  
+  .emptyDescription {
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .tableHeader {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tableTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .tableWrapper {
+    overflow-x: auto;
+  }
+  
+  .table {
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHead {
+    background-color: #f9fafb;
+  }
+  
+  .tableHeadRow {
+    border: none;
+  }
+  
+  .tableHeadCell {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tableBody {
+    background-color: white;
+  }
+  
+  .tableBodyRow {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tableBodyRow:hover {
+    background-color: #f9fafb;
+  }
+  
+  .tableCell {
+    padding: 16px 24px;
+    white-space: nowrap;
+  }
+  
+  .jobTitleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jobTitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+    margin: 0 0 4px 0;
+  }
+  
+  .applicationLink {
+    font-size: 0.875rem;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .applicationLink:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+  
+  .companyName {
+    font-size: 0.875rem;
+    color: #111827;
+  }
+  
+  .statusBadge {
+    display: inline-flex;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+  }
+  
+  .statusApplied {
+    background-color: #dbeafe;
+    color: #1e40af;
+  }
+  
+  .statusInterviewing {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .statusOffer {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .statusRejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .statusDefault {
+    background-color: #f3f4f6;
+    color: #374151;
+  }
+  
+  .dateText {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .actionsContainer {
+    font-size: 0.875rem;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+    padding: 0;
+  }
+  
+  .editButton {
+    color: #2563eb;
+  }
+  
+  .editButton:hover {
+    color: #1d4ed8;
+  }
+  
+  .deleteButton {
+    color: #dc2626;
+  }
+  
+  .deleteButton:hover {
+    color: #b91c1c;
+  }
