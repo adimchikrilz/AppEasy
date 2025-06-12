@@ -65,7 +65,7 @@ Please respond in JSON format with "summary" and "suggestedSkills" fields.`;
     try {
       const analysis: JobAnalysis = JSON.parse(responseContent);
       return res.status(200).json(analysis);
-    } catch (parseError) {
+    } catch {
       // Fallback if JSON parsing fails
       const fallbackAnalysis: JobAnalysis = {
         summary: "Unable to parse AI response. The job description analysis feature requires valid OpenAI integration.",
